@@ -14,17 +14,13 @@
   --font-inter: 'Inter', sans-serif;
   --font-ubuntu: 'Ubuntu', sans-serif;
   --background-color: rgb(214 214 212);
+  --header-footer-color: rgb(193, 193, 167);
   --color: #0a0a0a;
+  --detail-color: rgb(188, 188, 179);
+  --head-color: rgba(118, 115, 9, 0.87);
   --white-color: #fff;
-  --detail-color: rgb(104, 109, 4);
-  --detail-color-light: rgba(205, 211, 100, 0.963);
-  --dark-detail-color: rgb(88, 88, 85);
   --disabled-color: rgb(128 128 128 / 73.1%);
   --light-disabled-color: rgb(211 211 211 / 73.1%);
-  --red-color: rgb(161 7 7);
-  --header-footer-color: rgb(162, 165, 168);
-  --outline-color: #e6dede;
-  --dark-gray-color: #666;
   --status-ok-color: #199a48;
   --status-neutral-color: #e4c900;
   --status-error-color: #9a1919;
@@ -92,22 +88,19 @@ a:hover {
 h1 {
   font-family: var(--font-roboto), var(--font-inter), var(--font-ubuntu), system-ui, sans-serif;
   font-size: clamp(1.25rem, 0.9615rem + 1.1538vw, 1.8rem);
-  line-height: 1.1;
-  color: var(--detail-color);
-  text-align: center;
-  padding: 0 0.625rem 1.25rem;
+  color: var(--head-color);
 }
 
 h2 {
   font-family: var(--font-roboto), var(--font-inter), var(--font-ubuntu), system-ui, sans-serif;
   font-size: clamp(1.125rem, 0.8846rem + 0.9615vw, 1.75rem);
-  color: var(--color);
+  color: var(--head-color);
 }
 
 h3 {
   font-family: var(--font-roboto), var(--font-inter), var(--font-ubuntu), system-ui, sans-serif;
   font-size: clamp(1rem, 0.8798rem + 0.4808vw, 1.3125rem);
-  color: var(--color);
+  color: var(--head-color);
 }
 
 p {
@@ -216,7 +209,7 @@ select option:focus {
 
 .container {
   width: 100%;
-  max-width: 75rem;
+  max-width: 90.5rem;
   margin: 0 auto;
   padding: 0 0.625rem;
 }
@@ -234,8 +227,13 @@ main {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  text-align: center;
+  height: 100%;
+  background: var(--header-footer-color);
+  padding: 3vh;
 }
 
 footer {
@@ -243,15 +241,6 @@ footer {
   height: 100%;
   background: var(--header-footer-color);
   box-shadow: 0 -0.125rem 0.5rem rgb(0 0 0 / 8%);
-}
-
-.card {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-radius: 0.75rem;
-
-  background: var(--white-color);
-  box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 8%);
 }
 
 .centered-container {
@@ -264,27 +253,6 @@ footer {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-}
-
-.mono {
-  resize: none;
-
-  overflow-y: auto;
-
-  width: 100%;
-  min-height: 11.9375rem;
-  max-height: 25rem;
-  padding: 0.5rem;
-  border: 0.0625rem solid var(--light-disabled-color);
-  border-radius: 0.25rem;
-
-  font-family: var(--font-mono), monospace;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  overflow-wrap: break-word;
-  white-space: pre-wrap;
-
-  outline: none;
 }
 
 .underline {
