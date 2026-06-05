@@ -1,11 +1,10 @@
 .box {
     display: flex;
     flex-direction: row;
-    gap: 0.625rem;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 64%;
+    max-width: 38%;
     padding: 1rem;
     background: var(--detail-color);
 }
@@ -20,3 +19,87 @@
   padding: 1rem;
   background: var(--background-color); 
 } 
+#label-box-1 {
+  flex: 1;
+  width: 100%;
+}
+#label-box-2 {
+  flex: 1;
+  width: 0;
+  display: none;
+}
+#label-box-3 {
+  flex: 1;
+  width: 0;
+  display: none;
+}
+#label-box-4 {
+  flex: 1;
+  width: 0;
+  display: none;
+}
+#label-box-5 {
+  flex: 1;
+  width: 0;
+  display: none;
+
+}
+.box-input {
+  display: none;
+}
+.box-title {
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 0.0625rem 0.0625rem 0.0165rem rgb(126 119 115 / 0%), 0.00rem 0.0625rem 0.0165rem rgba(129, 121, 108, 0.614);
+  color: var(--box-color);
+}
+
+.box-img {
+  text-align: center;
+  padding: 1.5rem 0 1.5rem;
+}
+
+.box-img img {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  height: inherit;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.box-img img:active {
+  opacity: 0.5;
+}
+.control {
+  display: flex;
+  flex-direction: row;  
+  gap: 0.625rem;
+  align-items: center;
+}
+.control-btn{
+  cursor: pointer;
+  user-select: none;
+  /* padding: 0.25rem 1.4375rem;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.5rem; */
+}
+
+.fa-solid {
+  font-size: clamp(0.875rem, 0.8529rem + 0.1106vw, 0.9375rem);  
+  font-weight: 600;
+  color: var(--box-color);  
+  padding: 0.5rem;
+}
+.fa-solid.fa-circle {
+  display: none;
+  color: var(--head-color);
+}
+.control-btn .fa-solid.fa-circle-dot:checked {
+  display: none;
+}
+.control-btn .fa-solid.fa-circle-dot:checked ~ .control-btn .fa-solid.fa-circle {
+  display: block;
+}
