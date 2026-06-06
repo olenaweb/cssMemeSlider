@@ -7,7 +7,6 @@
   <title>MemeSlider</title>
   <link href="assets/icons/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="ground.css">
-  <script src="https://kit.fontawesome.com/cec7e5a09f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="media.css">
 
@@ -18,70 +17,68 @@
     <h1 title='Task'> MemeSlider</h1>
   </header>
   <main class="container">
-    <div class="box">
+    <section class="slider" aria-label="CSS meme slider">
+      <input class="slider__radio" type="radio" id="slide-1" name="slider" checked>
+      <input class="slider__radio" type="radio" id="slide-2" name="slider">
+      <input class="slider__radio" type="radio" id="slide-3" name="slider">
+      <input class="slider__radio" type="radio" id="slide-4" name="slider">
+      <input class="slider__radio" type="radio" id="slide-5" name="slider">
 
-      <div class="box-item">
-        <label class="box-title" for="box-1">
-          <span class="box-plus">What can I do?
-            <i class="fa-solid fa-circle-dot"></i>
-            <i class="fa-solid fa-circle"></i>
-          </span>
-          <input class="box-input" type="radio" id="box-1" name="radio" checked>
-          <span class="box-img animate">
-            <img src="assets/image/WhatCanIDo.jpg" alt="What can I do?">
-          </span>
-        </label>
-      </div>
-      <div class="box-item">
-        <label class="box-title" for="box-2">
-          <span class="box-plus">What do you think?
-            <i class="fa fa-plus plus-img"></i>
-          </span>
-          <input class="box-input" type="radio" id="box-2" name="radio">
-          <span class="box-img animate">
-            <img src="assets/image/WhatDoYouThink.jpg" alt="What do you think?">
-          </span>
-        </label>
-      </div>
-      <div class="box-item">
-        <label class=" box-title" for="box-3">
-          <span class="box-plus">It's very important Work-Life Balance
-            <i class="fa fa-plus plus-img"></i>
-          </span>
-          <input class="box-input" type="radio" id="box-3" name="radio">
-          <span class="box-img animate">
-            <img src="assets/image/WorkLifeBalance.jpg" alt="WorkLifeBalance">
-          </span>
-        </label>
+      <div class="slider__viewport">
+        <div class="slider__track">
+          <figure class="slider__slide">
+            <img src="assets/image/WhatCanIDo.jpg" alt="What can I do meme">
+          </figure>
+          <figure class="slider__slide">
+            <img src="assets/image/WhatDoYouThink.jpg" alt="What do you think meme">
+          </figure>
+          <figure class="slider__slide">
+            <img src="assets/image/WorkLifeBalance.jpg" alt="Work-Life Balance meme">
+          </figure>
+          <figure class="slider__slide">
+            <img src="assets/image/toJavaScript.jpg" alt="Go ahead, learn JavaScript meme">
+          </figure>
+          <figure class="slider__slide">
+            <img src="assets/image/IAmSenior.jpg" alt="Morning will come meme">
+          </figure>
+        </div>
       </div>
 
-      <div class="box-item">
-        <label class=" box-title" for="box-4">
-          <span class="box-plus">Go ahead, learn JS
-            <i class="fa fa-plus plus-img"></i>
-          </span>
-          <input class="box-input" type="radio" id="box-4" name="radio">
-          <span class="box-img animate">
-            <img src="assets/image/toJavaScript.jpg" alt="toJavaScript.jpg">
-          </span>
-        </label>
-      </div>
+      <div class="slider__footer">
+        <div class="slider__captions" aria-label="Slider captions">
+          <div class="slider__captions-track">
+            <p class="slider__caption">What can I do?</p>
+            <p class="slider__caption">What do you think?</p>
+            <p class="slider__caption">It's very important: Work-Life Balance.</p>
+            <p class="slider__caption">Go ahead, learn JS.</p>
+            <p class="slider__caption">The morning will come, I know JS is waiting for you and me.</p>
+          </div>
+        </div>
 
-      <div class="box-item">
-        <label class=" box-title" for="box-5">
-          <span class="box-plus">The the morning will come,
-            I know JS is waiting for you and me.
-            <i class="fa fa-plus plus-img"></i>
-          </span>
-          <input class="box-input" type="radio" id="box-5" name="radio">
-          <span class="box-img animate">
-            <img src="assets/image/IAmSenior.jpg" alt="IAmSenior">
-          </span>
-        </label>
+        <div class="slider__controls" aria-label="Slider controls">
+          <label for="slide-1" class="slider__control" aria-label="Show slide 1">
+            <span class="slider__dot"></span>
+          </label>
+          <label for="slide-2" class="slider__control" aria-label="Show slide 2">
+            <span class="slider__dot"></span>
+          </label>
+          <label for="slide-3" class="slider__control" aria-label="Show slide 3">
+            <span class="slider__dot"></span>
+          </label>
+          <label for="slide-4" class="slider__control" aria-label="Show slide 4">
+            <span class="slider__dot"></span>
+          </label>
+          <label for="slide-5" class="slider__control" aria-label="Show slide 5">
+            <span class="slider__dot"></span>
+          </label>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
-
+  <footer>
+    <p>RS School JS Bootcamp 2026. Created by <a href="https://github.com/olenaweb/cssMemeSlider" target="_blank"
+        rel="noopener noreferrer">Olenaweb</a></p>
+  </footer>
 </body>
 
 </html>
