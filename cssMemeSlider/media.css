@@ -1,0 +1,29 @@
+@media (max-width: 48rem) {
+  .slider {
+    width: min(100%, 40rem);
+  }
+
+  .slider__footer {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .slider__controls {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 32rem) {
+  .slider {
+    padding: 0.75rem;
+  }
+
+  .slider__caption {
+    font-size: 0.95rem;
+  }
+
+  .slider__control {
+    width: 1.85rem;
+    height: 1.85rem;
+  }
+}
