@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemeSlider</title>
+  <link href="assets/icons/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="ground.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
+
+</head>
+
+<body>
+  <header>
+    <h1 title='Task'> MemeSlider</h1>
+  </header>
+  <main class="container">
+    <section class="slider" aria-label="CSS meme slider">
+      <input class="slider__radio" type="radio" id="slide-1" name="slider" checked>
+      <input class="slider__radio" type="radio" id="slide-2" name="slider">
+      <input class="slider__radio" type="radio" id="slide-3" name="slider">
+      <input class="slider__radio" type="radio" id="slide-4" name="slider">
+      <input class="slider__radio" type="radio" id="slide-5" name="slider">
+
+      <div class="slider__viewport">
+        <div class="slider__track">
+          <figure class="slider__slide">
+            <img src="assets/image/WhatCanIDo.jpg" alt="What can I do meme">
+          </figure>
+          <figure class="slider__slide">
+            <img src="assets/image/WhatDoYouThink.jpg" alt="What do you think meme">
+          </figure>
+          <figure class="slider__slide">
+            <img src="assets/image/WorkLifeBalance.jpg" alt="Work-Life Balance meme">
+          </figure>
+          <figure class="slider__slide">
+            <img src="assets/image/toJavaScript.jpg" alt="Go ahead, learn JavaScript meme">
+          </figure>
+          <figure class="slider__slide">
+            <img src="assets/image/IAmSenior.jpg" alt="Morning will come meme">
+          </figure>
+        </div>
+      </div>
+
+      <div class="slider__footer">
+        <div class="slider__captions-viewport" aria-label="Slider captions">
+          <div class="slider__captions-track">
+            <p class="slider__caption">What can I do?</p>
+            <p class="slider__caption">What do you think?</p>
+            <p class="slider__caption">It's very important: Work-Life Balance.</p>
+            <p class="slider__caption">Go ahead, learn JS.</p>
+            <p class="slider__caption">The morning will come, I know JS is waiting for you and me.</p>
+          </div>
+        </div>
+
+        <div class="slider__controls" aria-label="Slider controls">
+          <label for="slide-1" class="slider__control" aria-label="Show slide 1">
+            <span class="slider__dot"></span>
+          </label>
+          <label for="slide-2" class="slider__control" aria-label="Show slide 2">
+            <span class="slider__dot"></span>
+          </label>
+          <label for="slide-3" class="slider__control" aria-label="Show slide 3">
+            <span class="slider__dot"></span>
+          </label>
+          <label for="slide-4" class="slider__control" aria-label="Show slide 4">
+            <span class="slider__dot"></span>
+          </label>
+          <label for="slide-5" class="slider__control" aria-label="Show slide 5">
+            <span class="slider__dot"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>RS School • JS Bootcamp 2026 • Created by <a href="https://github.com/olenaweb/cssMemeSlider" target="_blank"
+        rel="noopener noreferrer">Olenaweb 💖</a></p>
+  </footer>
+</body>
+
+</html>
